@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    	<meta charset="utf-8">
+    	<title>Nerds-catalog</title>
+    </head>
+    <body>
+    	<header class="nerds-header">
+        	<div class="header-logo">
+        		
+        		<a href="#">
+        			<img src="#" alt="Нердс" width="150" height="90">
+        		</a>
+        	</div>
+        	<nav class="header-navigation">
+        		<ul>
+        			<li>
+        				<a href="#">Студия</a>
+        			</li>
+        			<li>
+        				<a href="#">Клиенты</a>
+        			</li>
+        			<li>
+        				<a href="#">Магазин</a>
+        			</li>
+        			<li>
+        				<a href="#">Контакты</a>
+        			</li>
+        			<li>
+        				<a href="#">Корзина</a>
+        			</li>
+        		</ul>
+        	</nav>
+        	<div class="header-welcome">
+        		<h1>
+        			Добро пожаловать в магазин
+        			готовых макетов
+        		</h1>
+        	</div>
+        </header>
+        <main>
+        	<div class="filter">
+        	    <form>
+        	    	<div class="cost-filter">
+        	    		<label for='cost-part'>Стоимость: </label>
+	        	    	<input type="range" min="0" max="15000" step="100" name="cost" id="cost-part">
+	        	    	<label for="min-cost">ОТ</label>
+	        	    	<input type="text" name="cost" id="min-cost" value="0">
+	        	    	<label for="max-cost">ДО</label>
+	        	    	<input type="text" name="cost" id="max-cost" value="15000">
+	        	    	 
+	        	    </div>       	    		
+        	    	<div class="radio-filter">
+        	    	<p>Сетка: </p>      	 
+	        	    	<input type="radio" name="net" id="addaptive" checked="">
+	        	    	<label for="addaptive">Адаптивная</label>
+	        	    	<input type="radio" name="net" id="fiks">
+	        	    	<label for="fiks">Фиксированная</label>
+	        	    	<input type="radio" name="net" id="rubber">
+	        	    	<label for="rubber">Резиновая</label>
+	        	    </div>
+        	    	<div class="checkbox-filter">
+        	    		<p>Особенности: </p>
+	        	    	<input type="checkbox" id="slider" checked>
+	        	    	<label for="slider">Слайдер</label>
+	        	    	<input type="checkbox" id="block">
+	        	    	<label for="block">Блок преимуществ</label>
+	        	    	<input type="checkbox" id="news" checked>
+	        	    	<label for="news">Новости</label>
+	        	    	<input type="checkbox" id="gallery">
+	        	    	<label for="gallery">Галерея</label>
+	        	    	<input type="checkbox" id="basket">
+	        	    	<label for="basket">Корзина</label>
+	        	    	<input type="submit" name="show" value="Показать">
+	        	    </div>
+        	    </form>
+        	</div>
+        	<div class="sorting-filter">
+        		<p>
+        			Сортировать:
+        		</p>	
+        		<button>По цене</button>
+        		<button>По типу</button>
+        		<button>По функционалу</button>
+        		<div class="triangle">
+        			<button></button>
+        			<button></button>
+        		</div>
+        	</div>
+        	<div class="site-pictures">
+        		<div class="aviator">
+	        		<input type="radio" name="aviator-radio">
+	        		<input type="radio" name="aviator-radio">
+	        		<input type="radio" name="aviator-radio">
+	        		<img src="#" width="240" height="240" alt="aviator">
+	        	</div>
+	        	<div class="sunset">
+	        		<input type="radio" name="sunset-radio">
+	        		<input type="radio" name="sunset-radio">
+	        		<input type="radio" name="sunset-radio">
+	        		<img src="#" width="240" height="240" alt="sunset">
+	        		<p class="sunset-title">
+	        		Sunset
+	        		</p>
+	        		<p>
+	        			Интернет магазин
+	        			с личным кабинетом
+	        		</p>
+	        		<a href="#">10000 Р.</a>
+	        	</div>
+	        	<div class="forte">
+	        		<input type="radio" name="forte-radio">
+	        		<input type="radio" name="forte-radio">
+	        		<input type="radio" name="forte-radio">
+	        		<img src="#" width="240" height="240" alt="forte">
+	        	</div>
+	        	<div class="modern">
+	        		<input type="radio" name="modern-radio">
+	        		<input type="radio" name="modern-radio">
+	        		<input type="radio" name="modern-radio">
+	        		<img src="#" width="240" height="240" alt="modern">
+	        	</div>
+	        	<div class="avenue">
+	        		<input type="radio" name="avenue-radio">
+	        		<input type="radio" name="avenue-radio">
+	        		<input type="radio" name="avenue-radio">
+	        		<img src="#" width="240" height="240"	alt="avenue">
+	        	</div>
+	        	<div class="dovetail">
+	        		<input type="radio" name="dovetail-radio">
+	        		<input type="radio" name="dovetail-radio">
+	        		<input type="radio" name="dovetail-radio">
+	        		<img src="#" width="240" height="240" alt="dovetail">
+	        	</div>	
+        	</div>
+        	<div class="page-number">        	
+        		<a href="#">1</a>
+        		<a href="#">2</a>
+        		<a href="#">3</a>
+        		<a href="#">Следующая</a>
+        	</div>
+        	<div class="contacts-map">
+        		<img src="#" width="1200" height="415" alt="Как нас найти">
+        	</div>
+        	<section class="contacts">
+        		<p class="nerds-map-title">
+        			NЁRDS DESIGN STUDIO        	
+        		</p>
+        		<p>
+        			191186, Санкт-Петербург, 
+        			ул. Б.Конюшенная, д. 19/8        			
+        		</p>
+        		<p>
+        			тел. +7(812)275-75-75
+        		</p>
+        		<a href="#">
+        			Напишите нам
+        		</a>
+        	</section>
+        </main>
+        <footer>
+        	<section class="footer-social-net">
+        		<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+  				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+  				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+        	</section>
+        	<div class="footer-call">
+        		<p>
+        			Давайте дружить, это выгодно!
+        		</p>
+        		<p>
+        			Скидка 10% для друзей из социальных сетей.
+        		</p>
+        	</div>
+        </footer>
+    </body>
+</html>
