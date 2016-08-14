@@ -1,0 +1,29 @@
+.body{
+	font-family: roboto;
+	font-weight: medium;
+	font-color: #283136;
+	font-size: 16px;
+	line-height: 22px;
+}
+h1{
+	font-family: roboto;
+	font-weight: medium;
+	font-color: #000000;
+	font-size: 40px;
+	line-height: auto;
+	text-transform: uppercase;
+}
+h2{
+	font-family: roboto;
+	font-weight: medium;
+	font-color: #000000;
+	font-size: 36px;
+	line-height: 36px;
+}
+h3{
+	font-family: roboto;
+	font-weight: medium;
+	font-color: #000000;
+	font-size: 18px;
+	line-height: 30px;
+}
