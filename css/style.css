@@ -26,4 +26,137 @@ h3{
 	color: #000000;
 	font-size: 18px;
 	line-height: 30px;
+	text-transform: uppercase;
+}
+/* Сетка Nerds-catalog */
+.nerds-catalog{
+	width: 1200px;
+	min-height: 2246px;
+	margin: 0px auto;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+header{
+	background-color: #eeeeee;
+}
+.header-logo{
+	float: left;
+	margin: 27px 180px  75px 160px;
+}
+.header-navigation{
+	float: right;
+	width: 400px;
+	font-size: 14px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.header-welcome{
+	clear: both;
+	width: 720px;
+	line-height: 40px;
+	margin-left: 230px;
+	text-align: center;
+	padding-bottom: 90px;
+}
+.filter{
+	width: 240px;
+	margin-left: 160px;
+	float: left;
+	/* Временные тэги */
+	min-height: 730px;
+}
+.radio-filter label{
+	line-height: 20px;
+}
+#min-cost, #max-cost{
+	width: 80px;
+}
+.sorting-filter a{
+display: block;
+float: left;
+padding-right: 40px;
+}
+.pictuer-container{
+	width: 560px;
+	float: left;
+	margin-left: 80px;
+}
+.site-pictures{
+	display: inline-block;
+	margin-bottom: 80px;
+}
+.site-pictures:nth-child(odd){
+	margin-right: 76px;	
+}
+.page-number{
+	width: 300px;
+	margin: 80px 480px 80px;
+}
+.page-number a{
+	display: inline-block;
+	width: 36px;
+	border: solid 1px #f2f2f2;
+	background: #f1f1f1;
+	border-radius: 4px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 7px 0px;
+}
+.page-number a:last-child{
+	width: 138px;
+}
+.page-number a:first-child{
+	background: transparent;
+}
+.contacts-map{
+	display: inline-block;
+	background-image: url("../img/map.jpg");
+	width: 1200px;
+	height: 416px;
+}
+.contacts{
+	background-color: white;
+	width: 250px;
+	text-align: center;
+	margin-left: 160px;
+	margin-top: 90px;
+/* 250 240*/
+}
+.contacts p{
+	line-height: 20px;
+	color: #666666
+}
+.contacts p:first-child{
+	line-height: 30px;
+	color: #000000;
+	padding-top: 28px;
+}
+.contacts a{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 18px;
+	width: 205px;
+	padding: 10px 0px;
+	background-color: #fb565a;
+	color: #ffffff;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	margin-top: 10px;
+}
+.footer-social-net{
+	float: left;
+	width: 240px;
+	margin-top: 78px;
+	margin-bottom: 78px;
+	margin-left: 160px;
+	margin-right: 80px;
+}
+.footer-call{
+	float: left;
+	width: 550px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
