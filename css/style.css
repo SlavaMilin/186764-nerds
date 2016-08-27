@@ -28,173 +28,195 @@ h3{
 	line-height: 30px;
 	text-transform: uppercase;
 }
-
-/*Нёрдс Индекс*/
-/*Позиционирование*/
-.nerds-index{
-	width: 1200px;
-	min-height: 2256px;
-	padding: 0;
+html,
+body{
+	min-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.container{
+	width: 880px;
 	margin: 0px auto;
+	padding: 0px 10px;
 }
 .clearfix::after{
 	content: "";
 	display: table;
 	clear: both;
 }
+/*Нёрдс Индекс сетка*/
 .index-header{
-	background: #eeeeee
+	background: #eeeeee;
 }
-/* фон для сравнения*/
-.header-logo{
-	min-height: 56px;
-	outline: 1px solid red;
-	/*Временные тэги*/
-	float: left;
-	width: 140px;
-	margin-top: 27px;
-	margin-left: 160px;
-}
-.header-navigation{
-	min-height: 17px;
-	outline: 1px solid red;
-	/*Временные тэги*/
+.index-navigation{
 	float: right;
 	width: 560px;
-	margin-right: 160px;
-	margin-top: 60px;
-	margin-bottom: 59px;
+	margin-top: 58px;
+	margin-bottom: 55px;
 }
 .header-info{
-	min-height: 195px;
-	outline: 1px solid red;
-	/*Временные тэги*/
+	width: 380px;
 	float: left;
-	width: 361px;
-	margin:25px 40px 80px 160px;
+	margin-top: 20px;
 }
 .header-switch-menu{
-	min-height: 10px;
-	outline: 1px solid red;
-	/*Временные тэги*/
 	float: left;
 	width: 60px;
+	margin-left: 20px;
 	margin-top: 196px;
 }
 .header-img{
-	min-height: 231px;
-	outline: 1px solid red;
-	/*Временные тэги*/
-	float: left;
-	width: 340px;
-	margin-left: 80px;
-	margin-bottom: 69px;	
+	float: right;
+	width: 338px;
+	margin-bottom: 69px;
 }
 .main-product-item{
-	min-height: 299px;
-	outline: 1px solid red;
-	/*Временные тэги*/
-	float: left;
 	width: 240px;
+	float: left;
 	margin-right: 80px;
 	margin-top: 80px;
 	margin-bottom: 80px;
 }
-.main-product-item:first-child{
-	margin-left: 160px;
+.main-product-item:nth-child(3){
+	margin-right: 0px;
 }
-.decorate-line{
-	min-height: 3px;
-	outline: 1px solid red;
-	/*Временные тэги*/
-	width: 880px;
-	margin-left: 160px;
+.line-1{
+	clear: both;
 	margin-bottom: 59px;
-	padding: 0px;
-	line-height: 0px;
-	font-size: 0px;
 }
 .main-about{
-	min-height: 327px;
-	outline: 1px solid red;
-	/*Временные тэги*/
 	float: left;
-	width: 573px;
-	margin-top: 14px;
-	margin-left: 160px;
+	width: 621px;
+	margin-top: 10px
 }
-.main-commercial{
-	min-height: 341px;
-	outline: 1px solid red;
-	/*Временные тэги*/
-	float: left;
+.main-comercial{
+	float: right;
 	width: 240px;
-	margin-left: 68px;
-	margin-bottom: 72px;
+	margin-bottom: 67px;
 }
-.glukhanko{
-	min-height: 37px;
-	outline: 1px solid red;
-	/*Временные тэги*/
+.main-logo{
+	width: 187px;
+	margin-left: 31px;
+	clear: both; 
+}
+.line-2{
+	margin-bottom: 45px;
+	clear: both;
+}
+.glukhanko a{
 	float: left;
 	width: 198px;
-	margin-left: 173px;
-	margin-top: 69px;
-	margin-bottom: 64px;
+	margin-top: 22px;
+	margin-left: 12px;
+	margin-bottom: 62px;
+	margin-right: 120px;
 }
-.html-academy{
-	min-height: 68px;
-	outline: 1px solid red;
-	/*Временные тэги*/
+.html-academy a{
 	float: left;
 	width: 199px;
-	margin-left: 120px;
-	margin-top: 57px;
+	margin-top: 10px;
 }
-.borodinski{
-	min-height: 90px;
-	outline: 1px solid red;
-	/*Временные тэги*/
+.borodinski a{
+	float: right;
+	width: 209px;
+	margin-right: 22px;
+}
+.line-3{
+	margin-bottom: 85px;
+	clear: both;
+}
+
+/*Нерлс каталог сетка*/
+
+.catalog-header{
+	background: #eeeeee;	
+}
+.nerds-logo{
 	float: left;
-	width: 208px;
-	margin-left: 124px;
-	margin-top: 47px;
+	width: 140px;
+	margin-top: 27px;
 }
-.main-partners{
-	margin-bottom: 84px;
+.catalog-navigation{
+	float: right;
+	width: 560px;
+	margin-top: 58px;
+	margin-bottom: 74px;
+} 
+.catalog-title{
+	clear: both;
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 89px;
 }
-.main-map{
-	min-height: 417px;
-	outline: 1px solid red;
-	/*Временные тэги*/
-	display: inline-block;
-	width: 1200px;
-}
-.table-in-map{
-	min-height: 240px;
-	outline: 1px solid red;
-	/*Временные тэги*/
-	width: 250px;
-	margin-left: 160px;
-	margin-top: 88px;
-}
-.social-net{
-	min-height: 61px;
-	outline: 1px solid red;
-	/*Временные тэги*/
+.catalog-filter{
 	float: left;
 	width: 240px;
+	margin-top: 77px;	
+}
+.cost-filter{
+	margin-bottom: 48px;
+}
+.cost-filter p{
+	margin: 0px;
+}
+.radio-filter{
+	margin-bottom: 46px;
+}
+.checkbox-filter{
+	margin-bottom: 57px; 
+}
+.show-btn{
+	width: 155px;
+	margin-left: 1px;
+}
+.catalog-picture{
+	/*Временные тэги*/
+	float: right;
+	width: 560px;
+	margin-top: 77px;
+}
+.picture-fiter{
+	margin-bottom: 16px;
+}
+.picture-fiter p{
+	margin: 0px;
+}
+.site-pictures{
+	float: left;
+	width: 240px;
+	margin-bottom: 80px
+}
+.site-pictures:nth-child(odd){
+	margin-right: 80px;
+}
+.catalog-page-number{
+	clear: both;
+	width: 400px;
+	margin: 0px auto;
+	margin-bottom: 79px;
+}
+.nerds-map{
+	height: 417px;
+	margin-bottom: 75px;
+	width: 1200px;
+	margin: 0px auto;
+	background-image: url("../img/map.jpg");
+	margin-bottom: 75px;
+}
+.contacts{
+	float: left;
+	width: 250px;
+	margin-top: 89px;
 	margin-left: 160px;
-	margin-bottom: 77px;
-	margin-top: 72px; /* на 5 пикселе меньше?_?*/
+}
+.footer-social-net{
+	float: left;
+	width: 240px;
+	margin-top: 3px;
 }
 .footer-call{
-	min-height: 64px;
-	outline: 1px solid red;
-	/*Временные тэги*/
-	float: left;
-	width: 550px;
-	margin-top: 72px;
-	margin-left:80px;
+	float: right;
+	width: 560px;
+	margin-bottom: 72px;
 }
-/*Нерлс каталог сетка*/
