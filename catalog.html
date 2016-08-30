@@ -1,156 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-    	<meta charset="utf-8">
-    	<title>Nerds-catalog</title>
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+  	<meta charset="utf-8">
+  	<title>Nerds-catalog</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">    
+  </head>
     <body>
-    	<header class="nerds-header">
-        	<div class="header-logo">        		
-        		<a href="#">
-        			<img src="img/logo-header.png" alt="Нердс" width="139" height="56">
-        		</a>
-        	</div>
-        	<nav class="header-navigation">
-        		<ul>
-        			<li><a href="#">Студия</a></li>
-        			<li><a href="#">Клиенты</a></li>
-        			<li><a href="#">Магазин</a></li>
-        			<li><a href="#">Контакты</a></li>
-        			<li><a href="#">Корзина</a></li>
-        		</ul>
-        	</nav>
-        	<div class="header-welcome">
-        		<h1>
-        			Добро пожаловать в магазин
-        			готовых макетов
-        		</h1>
-        	</div>
-        </header>
-        <main>
-        	<div class="filter">
-        	    <form action="#">
-        	    	<div class="cost-filter">
-        	    		<h3>Стоимость: </h3>
-	        	    	<img src="img/slider.png" alt="slider">
-	        	    	<label for="min-cost">ОТ</label>
-	        	    	<input type="text" name="cost" id="min-cost" value="0">
-	        	    	<label for="max-cost">ДО</label>
-	        	    	<input type="text" name="cost" id="max-cost" value="15000">
-	        	    </div>       	    		
-        	    	<div class="radio-filter">
-        	    	    <h3>Сетка: </h3>
-	        	    	<input type="radio" name="net" id="addaptive" checked="">
-	        	    	<label for="addaptive">Адаптивная</label>
-	        	    	<input type="radio" name="net" id="fiks">
-	        	    	<label for="fiks">Фиксированная</label>
-	        	    	<input type="radio" name="net" id="rubber">
-	        	    	<label for="rubber">Резиновая</label>
-	        	    </div>
-        	    	<div class="checkbox-filter">
-        	    		<h3>Особенности: </h3>
-	        	    	<input type="checkbox" id="slider" checked>
-	        	    	<label for="slider">Слайдер</label>
-	        	    	<input type="checkbox" id="block">
-	        	    	<label for="block">Блок преимуществ</label>
-	        	    	<input type="checkbox" id="news" checked>
-	        	    	<label for="news">Новости</label>
-	        	    	<input type="checkbox" id="gallery">
-	        	    	<label for="gallery">Галерея</label>
-	        	    	<input type="checkbox" id="basket">
-	        	    	<label for="basket">Корзина</label>
-	        	    	<input type="submit" name="show" value="Показать">
-	        	    </div>
-        	    </form>
-        	</div>
-        	<div class="sorting-filter">
-        		<p>
-        			Сортировать:
-        		</p>	
-        		<a href="#">По цене</a>
-        		<a href="#">По типу</a>
-        		<a href="#">По функционалу</a>
-        		<div class="triangle">
-        			<a href="#">/\</a>
-        			<a href="#">\/</a>
-        		</div>
-        	</div>
-        	<div class="site-item">
-        		<div class="site-pictures">
-	        		<input type="radio" name="aviator-radio">
-	        		<input type="radio" name="aviator-radio">
-	        		<input type="radio" name="aviator-radio">
-	        		<img src="img/aviator.jpg" width="240" height="240" alt="aviator">
-	        	</div>
-	        	<div class="site-pictures">
-	        		<input type="radio" name="sunset-radio">
-	        		<input type="radio" name="sunset-radio">
-	        		<input type="radio" name="sunset-radio">
-	        		<img src="img/sunset.jpg" width="240" height="240" alt="sunset">
-	        		<p class="sunset-title">
-	        		<a href="#"> Sunset</a>
-	        		</p>
-	        		<p>
-	        			Интернет магазин
-	        			с личным кабинетом
-	        		</p>
-	        		<a href="#">10000 Р.</a>
-	        	</div>
-	        	<div class="site-pictures">
-	        		<input type="radio" name="forte-radio">
-	        		<input type="radio" name="forte-radio">
-	        		<input type="radio" name="forte-radio">
-	        		<img src="img/forte.jpg" width="240" height="240" alt="forte">
-	        	</div>
-	        	<div class="site-pictures">
-	        		<input type="radio" name="modern-radio">
-	        		<input type="radio" name="modern-radio">
-	        		<input type="radio" name="modern-radio">
-	        		<img src="img/modern.jpg" width="240" height="240" alt="modern">
-	        	</div>
-	        	<div class="site-pictures">
-	        		<input type="radio" name="avenue-radio">
-	        		<input type="radio" name="avenue-radio">
-	        		<input type="radio" name="avenue-radio">
-	        		<img src="img/avenue.jpg" width="240" height="240"	alt="avenue">
-	        	</div>
-	        	<div class="site-pictures">
-	        		<input type="radio" name="dovetail-radio">
-	        		<input type="radio" name="dovetail-radio">
-	        		<input type="radio" name="dovetail-radio">
-	        		<img src="img/dovetail.jpg" width="240" height="249" alt="dovetail">
-	        	</div>	
-        	</div>
-        	<div class="page-number">        	
-        		<a href="#">1</a>
-        		<a href="#">2</a>
-        		<a href="#">3</a>
-        		<a href="#">Следующая</a>
-        	</div>
-        	<div class="contacts-map">
-        		<img src="img/map.jpg" width="1200" height="416" alt="Как нас найти">
-        	</div>
-        	<section class="contacts">
-        		<p class="nerds-map-title">NЁRDS DESIGN STUDIO</p>
-        		<p>
-        			191186, Санкт-Петербург, 
-        			ул. Б.Конюшенная, д. 19/8        			
-        		</p>
-        		<p>тел. +7(812)275-75-75</p>
-        		<a href="#">Напишите нам</a>
-        	</section>
-        </main>
-        <footer>
-        	<section class="footer-social-net">
-	        	<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-	  				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-	  				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-        	</section>
-        	<div class="footer-call">
-        		<h2>Давайте дружить, это выгодно!</h2>
-        		<p>Скидка 10% для друзей из социальных сетей.</p>
-        	</div>
-        </footer>
+      <header class="catalog-header clearfix">
+        <div class="container clearfix">
+          <div class="nerds-logo">
+            <a href="#">
+              <img src="img/logo-header.png" alt="Нердс" width="139" height="56">
+            </a>
+          </div>
+          <nav class="catalog-navigation">
+            <ul>
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Корзина</a></li>
+            </ul>
+          </nav>
+          <div class="catalog-title">
+            <h1>
+              Добро пожаловать в магазин
+              готовых макетов
+            </h1>
+          </div>
+        </div>
+      </header>
+      <main class="catalog-main">
+        <div class="container clearfix">
+          <div class="catalog-filter">
+            <form>
+              <div class="cost-filter">
+                <p>Стоимость: </p>
+                <img src="img/slider.png" alt="slider"><br>
+                <label for="min-cost">ОТ</label>
+                <input type="text" name="cost" id="min-cost" value="0"><br>
+                <label for="max-cost">ДО</label>
+                <input type="text" name="cost" id="max-cost" value="15000">
+              </div>
+              <div class="radio-filter">
+                <h3>Сетка: </h3>
+                <input type="radio" name="net" id="addaptive" checked="">
+                <label for="addaptive">Адаптивная</label><br>
+                <input type="radio" name="net" id="fiks">
+                <label for="fiks">Фиксированная</label><br>
+                <input type="radio" name="net" id="rubber">
+                <label for="rubber">Резиновая</label><br>         
+              </div>
+              <div class="checkbox-filter">
+              <h3>Особенности: </h3>
+              <input type="checkbox" id="slider" checked>
+              <label for="slider">Слайдер</label><br>
+              <input type="checkbox" id="block">
+              <label for="block">Блок преимуществ</label><br>
+              <input type="checkbox" id="news" checked>
+              <label for="news">Новости</label><br>
+              <input type="checkbox" id="gallery">
+              <label for="gallery">Галерея</label><br>
+              <input type="checkbox" id="basket">
+              <label for="basket">Корзина</label><br>
+              </div>
+              <div class="show-btn">
+                <input type="submit" name="show" value="Показать">       
+              </div>
+            </form>      
+          </div>
+          <div class="catalog-picture clearfix">
+            <div class="picture-fiter">
+              <p>Сортировать:    
+              <a href="#">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По функционалу</a>
+              <a href="#">""</a>
+              <a href="#">""</a>
+              </p>
+            </div>
+            <div class="picture clearfix">
+              <div class="site-pictures">
+                <input type="radio" name="aviator-radio">
+                <input type="radio" name="aviator-radio">
+                <input type="radio" name="aviator-radio">
+                <br>
+                <img src="img/aviator.jpg" width="240" height="240" alt="aviator">
+              </div>
+              <div class="site-pictures">
+                <input type="radio" name="sunset-radio">
+                <input type="radio" name="sunset-radio">
+                <input type="radio" name="sunset-radio">
+                <br>
+                <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
+              </div>
+              <div class="site-pictures">
+                <input type="radio" name="forte-radio">
+                <input type="radio" name="forte-radio">
+                <input type="radio" name="forte-radio">
+                <br>
+                <img src="img/forte.jpg" width="240" height="240" alt="forte">
+              </div>
+              <div class="site-pictures">
+                <input type="radio" name="modern-radio">
+                <input type="radio" name="modern-radio">
+                <input type="radio" name="modern-radio">
+                <br>
+                <img src="img/modern.jpg" width="240" height="240" alt="modern">
+              </div>
+              <div class="site-pictures">
+                <input type="radio" name="avenue-radio">
+                <input type="radio" name="avenue-radio">
+                <input type="radio" name="avenue-radio">
+                <br>
+                <img src="img/avenue.jpg" width="240" height="240"  alt="avenue">
+              </div>
+              <div class="site-pictures">
+                <input type="radio" name="dovetail-radio">
+                <input type="radio" name="dovetail-radio">
+                <input type="radio" name="dovetail-radio">
+                <br>
+                <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail">
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page-number">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Следующая</a>
+          </div>
+        </div>
+        <div class="nerds-map">
+          <section class="contacts">
+            <p class="nerds-map-title">NЁRDS DESIGN STUDIO</p>
+            <p>
+              191186, Санкт-Петербург, 
+              ул. Б.Конюшенная, д. 19/8             
+            </p>
+            <p>тел. +7(812)275-75-75</p>
+            <a href="#">Напишите нам</a>                    
+          </section>       
+        </div>
+      </main>
+      <footer class="container clearfix">
+        <section class="footer-social-net">
+          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+        </section>
+        <div class="footer-call">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>        
+      </footer>
     </body>
-</html>
+  </html>
