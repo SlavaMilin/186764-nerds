@@ -3,14 +3,14 @@
 	<head>
     <meta charset="utf-8">
     <title>Nerds</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=cyrillic" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">    
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="index-header clearfix">
       <div class="container">
         <div class="clearfix">
-          <div class="nerds-logo">
+          <div class="nerds-index-logo">
             <a href="#">
               <img src="img/logo-header.png" alt="Нердс" width="139" height="56">
             </a>
@@ -21,29 +21,30 @@
               <li><a href="#">Клиенты</a></li>
               <li><a href="#">Магазин</a></li>
               <li><a href="#">Контакты</a></li>
-              <li><a href="#">Корзина</a></li>
             </ul>
           </nav>
+          <div class="basket">
+            <a href="#">Корзина</a>            
+          </div>
         </div>
         <div class="clearfix">
           <div class="header-info">
             <h2>Долго, дорого, скурпулезно.</h2>
-            <p>
-              Математически вывеенный дизайн
-              для вашего сайта или мобильного приложения
-            </p>
+            <p>Математически вывеенный дизайн<br>
+            для вашего сайта или мобильного приложения.</p>
             <a href="#">Узнать больше</a>
-          </div>
-          <div class="header-switch-menu">
-            <form action="#">
-              <input type="radio" name="switch-menu">
-              <input type="radio" name="switch-menu">
-              <input type="radio" name="switch-menu">
-            </form>
           </div>
           <div class="header-img">
             <img src="img/multi-platform.png" alt="Платформы" width="338" height="231">
           </div>
+          <div class="header-switch-menu">
+            <form action="#">
+              <input type="radio" name="switch-menu" class="radio-btn">
+              <input type="radio" name="switch-menu" class="radio-btn">
+              <input type="radio" name="switch-menu" class="radio-btn">
+            </form>
+          </div>
+        </div>
       </div>
     </header>
     <main class="index-main clearfix">
@@ -56,7 +57,7 @@
               Мир никогда не будет прежним
               после того как увидит ваш сайт!
             </p>
-            <a href="#">Заказать</a>
+            <a class="btn btn-1" href="#">Заказать</a>
           </div>
           <div class="main-product-item">
             <img src="img/app.png" alt="Приложения" width="240" height="124">
@@ -65,7 +66,7 @@
               Покорите топ-10 приложений
               в AppStore и Google Play
             </p>
-            <a href="#">Заказать</a>
+            <a class="btn btn-2" href="#">Заказать</a>
           </div>
           <div class="main-product-item">
             <img src="img/presentations.png" alt="Презентации" width="240" height="124">
@@ -74,7 +75,7 @@
               Вы даже не подозреваене,
               насколько вы изумительны!
             </p>
-            <a href="#">Заказать</a>
+            <a class="btn btn-3" href="#">Заказать</a>
           </div>
           <div class="line-1">
           </div>
@@ -85,12 +86,12 @@
               Мы - маленькая, но гордая
               дизайн-студия из Краснодара.
             </h2>
-            <p>
+            <p class="about-text-top">
               Исповедуем принцыпы минимализма и чистоты. Ставим математический
               расчет выше креатива. Работаем не покладая рук, как роботы.
             </p>
-            <p>
-              Выполняем заказы на разработку:
+            <p class="about-text-middle">
+              ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:
             </p>
             <ul>
               <li>Веб-сайтов любой сложности</li>
@@ -104,9 +105,9 @@
                 <img src="img/logo-main.png" alt="Nerds" width="187" height="75">
               </a>
             </div>
-            <div class="index-comercial">
-              <p>SINCE 2004</p>
-              <p>Как мы работаем:</p>
+            <div class="index-commercial">
+              <p class="since-commercial">SINCE 2004</p>
+              <p>КАК МЫ РАБОТАЕМ:</p>
               <ul>
                 <li>С самоотдачей 146%</li>
                 <li>Соблюдая сроки на 100%</li>
@@ -130,7 +131,7 @@
           </div>
           <div class="borodinski">
             <a href="#" class="borodinski">
-              <img src="img/borodinsky.png" alt="borodinski" width="209" height="86">
+              <img src="img/borodinsky.png" alt="borodinski" width="209" height="90">
             </a>
           </div>
           <div class="line-3">
@@ -139,26 +140,26 @@
       </div>
       <div class="nerds-map">
         <section class="contacts">
-          <h4>NЁRDS DESIGN STUDIO</h4>
+          <p>NЁRDS DESIGN STUDIO</p>
           <p>
             191186, Санкт-Петербург, 
-            ул. Б.Конюшенная, д. 19/8             
-          </p>
-          <p>тел. +7(812)275-75-75</p>
+            ул. Б.Конюшенная, д. 19/8 
+          </p>           
+           <p>тел. +7(812)275-75-75</p>
           <a href="#">Напишите нам</a>
         </section>
       </div>  
     </main>
     <footer class="container clearfix">
-      <div class="footer-social-net">
-        <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-        <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-      </div>
-      <div class="footer-call">
+      <section class="footer-social-net">
+        <a href="#" class="social-btn"><i class="btn-sprite btn-vk"></i>Вконтакте</a>
+        <a href="#" class="social-btn"><i class="btn-sprite btn-fb"></i>Фейсбук</a>
+        <a href="#" class="social-btn"><i class="btn-sprite btn-inst"></i>Инстаграм</a>
+      </section>
+      <section class="footer-call">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>        
-      </div>
+      </section>
     </footer>   
   </body>
 </html>
