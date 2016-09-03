@@ -770,7 +770,7 @@ body{
 /* Всплывающая форма */
 
 .modal-content {
-	display: none;
+	display: nne;
 	width: 460px;
 	padding: 50px 90px 50px 80px;
 	background: #ffffff;
