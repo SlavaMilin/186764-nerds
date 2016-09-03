@@ -64,9 +64,10 @@ body{
 	color: #283136;
 	display: block;
 	margin-right: 46px;
+	cursor: default;
 }
 .index-navigation a:hover{
-	border-bottom: 2px solid red;
+	border-bottom: 2px solid #fb565a;
 }
 .index-navigation a:active{
 	color: #8f8f8f;
@@ -83,6 +84,9 @@ body{
 	font-size: 14px;
 	line-height: 30px;
 }
+.container .index-navigation .index-selected{
+	border-bottom: solid 2px #fb565a;
+	}
 .basket{
 	float: right;
 	margin-top: 55px;
@@ -97,9 +101,13 @@ body{
 	font-size: 14px;
 	line-height: 30px;
 	color: #283136;
+	cursor: default;
 }
 .basket a:hover{
-	border-bottom: solid 2px red;
+	border-bottom: solid 2px #fb565a;
+}
+.basket a:active{
+	color: #8f8f8f;
 }
 .basket a::before{
 	content: "";
@@ -141,6 +149,7 @@ body{
   outline: none;
   cursor: pointer;
 	border-radius: 5px;
+	cursor: default;
 }
 .header-info a:hover{
 	background: #d6494d;
@@ -348,6 +357,7 @@ body{
 	margin-bottom: 62px;
 	margin-right: 120px;
 	opacity: 0.2;
+	cursor: default;
 }
 .glukhanko a:hover,
 .glukhanko a:active{
@@ -359,6 +369,7 @@ body{
 	height: 68px;
 	margin-top: 10px;
 	opacity: 0.2;
+	cursor: default;
 }
 .html-academy a:hover,
 .html-academy a:active{
@@ -370,6 +381,7 @@ body{
 	height: 90px;
 	margin-right: 22px;
 	opacity: 0.2;
+	cursor: default;
 }
 .borodinski a:hover,
 .borodinski a:active{
@@ -427,6 +439,7 @@ body{
 	line-height: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
+	cursor: default;
 }
 .contacts a:hover{
 	background: #d6494d;
@@ -449,6 +462,7 @@ body{
 	height: 61px;
 	border-radius: 50%;
 	background: #e1e1e1;
+	cursor: default;
 }
 .social-btn:last-child{
 	margin-right: 0px;
@@ -487,6 +501,9 @@ body{
 
 .catalog-header{
 	background: #eeeeee;	
+}
+.container .index-navigation .catalog-selected{
+	border-bottom: solid 2px #fb565a;
 }
 .catalog-title{
 	display: inline-block;
@@ -528,19 +545,33 @@ body{
 	margin-bottom: 46px;
 }
 .radio-filter input{
+	float: left;
 	width: 25px;
 	height: 25px;
+	margin: 0 0 15px 0;
+}
+.radio-filter label{
+	display: block;
+	padding-top: 3px;
+	margin: 0 0 0 35px;
 }
 .checkbox-filter{
 	margin-bottom: 57px; 
 }
 .checkbox-filter input{
+	float: left;	
 	width: 23px;
 	height: 23px;
+}
+.checkbox-filter label{
+	display: block;
+	padding-top: 5px;
+	margin: 0 0 0 35px;
 }
 .show-btn input{
 	width: 155px;
 	border: none;
+	outline: none;
 	font: inherit;
 	line-height: 18px;
 	font-size: 12px;
@@ -581,6 +612,7 @@ body{
 	float: left;
 	color: #b2b2b2;
 	text-decoration: none;
+	cursor: default;
 	border-bottom: dotted 1px #00ca74
 }
 .filter-btn:hover{
@@ -597,6 +629,7 @@ body{
 	float: right;
 	width: 11px;
 	height: 10px;
+	cursor: default;
 	background: url("../img/sprite.png") no-repeat;
 }
 .triangle-down{
@@ -673,6 +706,7 @@ body{
 	text-align: center;
 	padding: 8px 0;
 	vertical-align: bottom;
+	cursor: default;
 }
 .site-table a:hover{
 	background: #d6494d;
@@ -706,14 +740,14 @@ body{
 	padding: 10px 0px;
 	background: #f1f1f1;
 	border-radius: 5px;
+	cursor: default;
 }
-.catalog-page-number .first-btn:disabled{
+.catalog-page-number .first-btn{
 	background: transparent;
 	box-sizing: border-box;
 	border: solid 1px #f2f2f2;
 	padding: 9px 0;
 }
-
 .catalog-page-number a:last-child{
 	width: 140px;
 }
