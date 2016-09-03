@@ -3,6 +3,7 @@
 	<head>
     <meta charset="utf-8">
     <title>Nerds</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">    
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -17,7 +18,7 @@
           </div>
           <nav class="index-navigation">
             <ul>
-              <li><a class="index-selected" href="#">Студия</a></li>
+              <li><a class="index-studio">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
               <li><a href="#">Магазин</a></li>
               <li><a href="#">Контакты</a></li>
@@ -27,19 +28,27 @@
             <a href="#">Корзина</a>            
           </div>
         </div>
-        <div class="clearfix">
+        <div class="second-flor clearfix">
           <div class="header-info">
-            <h2>Долго, дорого, скурпулезно.</h2>
-            <p>Математически вывеенный дизайн<br>
+            <h2 class="slider-1">Долго, дорого, скурпулезно.</h2>
+            <h2 class="slider-2">Любите ли вы математику, как любим её мы?</h2>
+            <h2 class="slider-3">Только наркотики, только хардкор!</h2>
+            <p class="slider-1">Математически вывеенный дизайн<br>
             для вашего сайта или мобильного приложения.</p>
-            <a href="#">Узнать больше</a>
+            <p class="slider-2">Нашим дизайнерам мы удаляем нейроны, ответственные<br>
+             за креатив, чтобы дать им возможность все просчитать</p>
+            <p class="slider-3">Все дизайнерские решения в нашей команде принимаются
+            только под воздействием качественных галюциногенов</p>
+            <a class="btn" href="#">Узнать больше</a>
           </div>
           <div class="header-img">
-            <img src="img/multi-platform.png" alt="Платформы" width="338" height="231">
+            <img class="slider-1" src="img/slider-1.png" alt="слайдер1" width="338" height="231">
+            <img class="slider-2" src="img/slider-2.png" alt="слайдер-2" width="230" height="249">
+            <img class="slider-3" src="img/slider-3.png" alt="слайдер-3" width="333" height="319">
           </div>
           <div class="header-switch-menu">
             <form action="#">
-              <input type="radio" name="switch-menu" class="radio-btn">
+              <input type="radio" name="switch-menu" class="radio-btn" checked>
               <input type="radio" name="switch-menu" class="radio-btn">
               <input type="radio" name="switch-menu" class="radio-btn">
             </form>
@@ -146,7 +155,7 @@
             ул. Б.Конюшенная, д. 19/8 
           </p>           
            <p>тел. +7(812)275-75-75</p>
-          <a href="#">Напишите нам</a>
+          <button class="btn" href="#">Напишите нам</button>
         </section>
       </div>  
     </main>
@@ -160,7 +169,19 @@
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>        
       </section>
-    </footer>   
+    </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="login-form">
+        <label for="your-name">Ваше имя:</label>
+        <label for="your-email">Ваш e-mail:</label>
+        <input class="input-name" type="text" name="your-name" placeholder="представьтесь, пожалуйста">
+        <input class="input-email" type="text" name="your-email" placeholder="для отправки ответа">
+        <label class="label-email" for="text-mail">Текст письма:</label>
+        <input class="input-text-mail" type="text" name="text-mail" placeholder="в свободной форме">
+        <button class="btn" type="submit">Отправить</button>     
+      </form>
+    </div>   
   </body>
 </html>
 

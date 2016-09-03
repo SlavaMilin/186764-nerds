@@ -3,6 +3,7 @@
 	<head>
   	<meta charset="utf-8">
   	<title>Nerds-catalog</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">    
   </head>
@@ -18,7 +19,7 @@
             <ul>
               <li><a href="#">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
-              <li><a class="catalog-selected" href="#">Магазин</a></li>
+              <li><a class="catalog-shop">Магазин</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
@@ -55,17 +56,17 @@
                 <label for="rubber">Резиновая</label><br>         
               </div>
               <div class="checkbox-filter">
-                <h3>Особенности: </h3>
-                <input type="checkbox" id="slider" checked>
-                <label for="slider">Слайдер</label><br>
-                <input type="checkbox" id="block">
-                <label for="block">Блок преимуществ</label><br>
-                <input type="checkbox" id="news" checked>
-                <label for="news">Новости</label><br>
-                <input type="checkbox" id="gallery">
-                <label for="gallery">Галерея</label><br>
-                <input type="checkbox" id="basket">
-                <label for="basket">Корзина</label><br>
+              <h3>Особенности: </h3>
+              <input type="checkbox" id="slider" checked>
+              <label for="slider">Слайдер</label><br>
+              <input type="checkbox" id="block">
+              <label for="block">Блок преимуществ</label><br>
+              <input type="checkbox" id="news" checked>
+              <label for="news">Новости</label><br>
+              <input type="checkbox" id="gallery">
+              <label for="gallery">Галерея</label><br>
+              <input type="checkbox" id="basket">
+              <label for="basket">Корзина</label><br>
               </div>
               <div class="show-btn">
                 <input type="submit" name="show" value="Показать">
@@ -171,7 +172,7 @@
               ул. Б.Конюшенная, д. 19/8             
             </p>
             <p>тел. +7(812)275-75-75</p>
-            <a href="#">Напишите нам</a>                    
+            <button class="btn" href="#">Напишите нам</button>                    
           </section>       
         </div>
       </main>
@@ -186,5 +187,17 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>        
       </section>
     </footer>
+        <div class="catalog-modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="login-form">
+        <label for="your-name">Ваше имя:</label>
+        <label for="your-email">Ваш e-mail:</label>
+        <input class="input-name" type="text" name="your-name" placeholder="представьтесь, пожалуйста">
+        <input class="input-email" type="text" name="your-email" placeholder="для отправки ответа">
+        <label class="label-email" for="text-mail">Текст письма:</label>
+        <input class="input-text-mail" type="text" name="text-mail" placeholder="в свободной форме">
+        <button class="btn" type="submit">Отправить</button>     
+      </form>
+    </div>  
     </body>
   </html>
