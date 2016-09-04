@@ -77,7 +77,7 @@ body{
 	cursor: default;
 }
 .index-navigation a:hover{
-	border-bottom: 2px solid #fb565a;
+	border-bottom: 2px solid red;
 }
 .index-navigation a:active{
 	color: #8f8f8f;
@@ -111,7 +111,7 @@ body{
 	cursor: default;
 }
 .basket a:hover{
-	border-bottom: solid 2px #fb565a;
+	border-bottom: solid 2px red;
 }
 .basket a::before{
 	content: "";
@@ -512,9 +512,12 @@ body{
 .catalog-header{
 	background: #eeeeee;	
 }
+<<<<<<< HEAD
 .catalog-shop{
 	border-bottom: 2px solid #fb565a;
 }
+=======
+>>>>>>> parent of bad3f04... Исправления
 .catalog-title{
 	display: inline-block;
 	width: 720px;
@@ -557,12 +560,15 @@ body{
 .radio-filter input{
 	width: 25px;
 	height: 25px;
+<<<<<<< HEAD
 	float: left;
 }
 .radio-filter label{
 	margin: 0 0 0 35px;
 	display: block;
 	padding-top: 4px;
+=======
+>>>>>>> parent of bad3f04... Исправления
 }
 .checkbox-filter{
 	margin-bottom: 57px; 
@@ -572,11 +578,14 @@ body{
 	height: 23px;
 	float: left;
 }
+<<<<<<< HEAD
 .checkbox-filter label{
 	margin: 0 0 0 35px;
 	display: block;
 	padding-top: 4px;
 }
+=======
+>>>>>>> parent of bad3f04... Исправления
 .show-btn input{
 	width: 155px;
 	border: none;
@@ -750,7 +759,7 @@ body{
 	border-radius: 5px;
 	cursor: default;
 }
-.catalog-page-number .first-btn{
+.catalog-page-number .first-btn:disabled{
 	background: transparent;
 	box-sizing: border-box;
 	border: solid 1px #f2f2f2;
