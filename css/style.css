@@ -128,7 +128,7 @@ body{
 	position: relative;
 }
 .slider-1{
-
+	display: nne;
 }
 .slider-2{
 	display: none;
@@ -770,7 +770,7 @@ body{
 /* Всплывающая форма */
 
 .modal-content {
-	display: nne;
+	display: none;
 	width: 460px;
 	padding: 50px 90px 50px 80px;
 	background: #ffffff;
@@ -781,7 +781,7 @@ body{
 	margin-left: -315px;
 }
 .catalog-modal-content{
-	display: nne;
+	display: none;
 	width: 460px;
 	padding: 50px 90px 50px 80px;
 	background: #ffffff;
@@ -790,6 +790,7 @@ body{
 	top: 276px;
 	left: 50%;
 	margin-left: -315px;
+	z-index: 20;
 }
 .modal-content-close{
 	width: 41px;
