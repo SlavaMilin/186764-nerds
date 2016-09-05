@@ -418,17 +418,16 @@ body{
 .nerds-map{
 	height: 417px;
 	margin-bottom: 75px;
-	width: 1200px;
+	width: 100%;
 	margin: 0px auto;
-	background-image: url("../img/map.jpg");
+	background-image: url("../img/map.jpg") no-repeat;
+	background-position: center;
 	margin-bottom: 75px;
 }
 .contacts{
-	float: left;
 	width: 250px;
 	height: 240px;
 	margin-top: 89px;
-	margin-left: 160px;
 	background: #ffffff;
 }
 .contacts p:first-child{
