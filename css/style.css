@@ -33,8 +33,8 @@ p{
 html,
 body{
 	min-width: 900px;
-  margin: 0;
-  padding: 0;
+  	margin: 0;
+  	padding: 0;
 }
 .container{
 	width: 880px;
@@ -112,6 +112,9 @@ body{
 }
 .basket a:hover{
 	border-bottom: solid 2px #fb565a;
+}
+.basket a:active{
+	color: #8f8f8f;
 }
 .basket a::before{
 	content: "";
@@ -219,8 +222,8 @@ body{
 	display: inline-block;
 	text-decoration: none;
 	border: none;
-  outline: none;
-  cursor: default;
+  	outline: none;
+  	cursor: default;
 	font: inherit;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -228,7 +231,7 @@ body{
 	color: white;
 	background: #fb565a;
 	padding: 10px 10px;
-	min-width: 140px;
+	min-width: 120px;
 	border-radius: 5px;
 	cursor: default;
 	text-align: center;
@@ -527,6 +530,9 @@ body{
 	width: 240px;
 	margin-top: 76px;	
 }
+.catalog-filter:hover{
+	cursor: pointer;
+}
 .catalog-filter h3{
 	margin-bottom: 17px;
 }
@@ -700,21 +706,11 @@ body{
 .site-table p:nth-child(3){
 	font-size: 14px;
 }
-.site-height{
-	height: 100px;
-}
 .site-table a{
-	display: inline-block;
-	width: 140px;
-	font-size: 18px;
-	text-decoration: none;
-	color: #ffffff;
-	background: #fb565a;
-	border-radius: 5px;
-	text-align: center;
-	padding: 8px 0;
-	vertical-align: bottom;
-	cursor: default;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -70px;
 }
 .site-table a:hover{
 	background: #d6494d;
