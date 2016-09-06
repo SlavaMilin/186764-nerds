@@ -33,7 +33,7 @@
             <h2 class="slider-1">Долго, дорого, скурпулезно.</h2>
             <h2 class="slider-2">Любите ли вы математику, как любим её мы?</h2>
             <h2 class="slider-3">Только наркотики, только хардкор!</h2>
-            <p class="slider-1">Математически вывеенный дизайн<br>
+            <p class="slider-1">Математически выверенный дизайн<br>
             для вашего сайта или мобильного приложения.</p>
             <p class="slider-2">Нашим дизайнерам мы удаляем нейроны, ответственные<br>
              за креатив, чтобы дать им возможность все просчитать</p>
@@ -48,9 +48,9 @@
           </div>
           <div class="header-switch-menu">
             <form action="#">
-              <input type="radio" name="switch-menu" class="radio-btn radio1" checked>
-              <input type="radio" name="switch-menu" class="radio-btn radio2">
-              <input type="radio" name="switch-menu" class="radio-btn radio3">
+              <input type="radio" name="switch-menu" class="radio-btn" checked id="radio1">
+              <input type="radio" name="switch-menu" class="radio-btn " id="radio2">
+              <input type="radio" name="switch-menu" class="radio-btn" id="radio3">
             </form>
           </div>
         </div>
@@ -156,7 +156,7 @@
               ул. Б.Конюшенная, д. 19/8             
             </p>
             <p>тел. +7(812)275-75-75</p>
-            <button class="btn write-us">Напишите нам</button>
+            <a class="btn write-us">Напишите нам</a>
           </section>
         </div>       
       </div>  
@@ -185,17 +185,20 @@
       </form>
     </div>
     <script>
-    var link = document.querySelector(".write-us");
-    var popup = document.querySelector(".modal-content");
-    var close = document.querySelector(".modal-content-close");
-      link.addEventListener("click", function(event){
-      event.preventDefault();
-      popup.classList.add("modal-content-show");
-    });
-      close.addEventListener("click", function(event){
-      event.preventDefault();
-      popup.classList.remove("modal-content-show");
-    });
+      var link = document.querySelector(".write-us");
+      var popup = document.querySelector(".modal-content");
+      var close = document.querySelector(".modal-content-close");
+        link.addEventListener("click", function(event){
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+      });
+        close.addEventListener("click", function(event){
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+        var link = document.querySelector(".write-us");
+        var link = document.querySelector(".write-us");
+        var link = document.querySelector(".write-us");
     </script>   
 </body>
 </html>

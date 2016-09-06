@@ -101,6 +101,7 @@ body{
 }
 .basket a{
 	display: inline-block;
+	vertical-align: top;
 	position: relative;
 	vertical-align: top;
 	text-decoration: none;
@@ -131,22 +132,13 @@ body{
 	position: relative;
 }
 .slider-1{
-	display: :none;
-}
-.radio-1:checked{
 	display: block;
 }
 .slider-2{
 	display: none;
 }
-.slider-2:checked{
-	display: block;
-}
 .slider-3{
 	display: none;
-}
-.slider-3:checked{
-	display: block;
 }
 .header-info{
 	width: 470px;
@@ -229,10 +221,10 @@ body{
 }
 .btn{
 	display: inline-block;
+	vertical-align: top;
 	text-decoration: none;
 	border: none;
-  	outline: none;
-  	cursor: default;
+  outline: none;
 	font: inherit;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -242,7 +234,6 @@ body{
 	padding: 10px 10px;
 	min-width: 120px;
 	border-radius: 5px;
-	cursor: default;
 	text-align: center;
 }
 .btn-1:hover{
@@ -454,13 +445,14 @@ body{
 .contacts p:nth-child(3){
 	margin-bottom: 28px;
 }
-.contacts button{
-	width: 204px;
+.contacts a{
+	width: 184px;
+	cursor: pointer;
 }
-.contacts button:hover{
+.contacts a:hover{
 	background: #d6494d;
 }
-.contacts button:active{
+.contacts a:active{
 	background: #b63538;
 }
 .footer-social-net{
@@ -470,6 +462,7 @@ body{
 }
 .social-btn{
 	display: inline-block;
+	vertical-align: top;
 	font-size: 0;
 	float: left;
 	margin-right: 15px;
@@ -478,7 +471,6 @@ body{
 	height: 61px;
 	border-radius: 50%;
 	background: #e1e1e1;
-	cursor: default;
 }
 .social-btn:last-child{
 	margin-right: 0px;
@@ -521,6 +513,7 @@ body{
 }
 .catalog-title{
 	display: inline-block;
+	vertical-align: top;
 	width: 720px;
 	padding: 0 80px;
 	margin-bottom: 80px;
@@ -615,6 +608,7 @@ body{
 	line-height: 18px;
 	font-size: 12px;
 	display: inline-block;
+	vertical-align: top;
 	width: 560px;
 }
 .picture-filter span{
@@ -681,6 +675,7 @@ body{
 }
 .site-pictures i{
 	display: inline-block;
+	vertical-align: top;
 	width: 10px;
 	height: 10px;
 	margin: 10px 7px 10px 0;
@@ -689,7 +684,8 @@ body{
 }
 .site-table{
 	width: 200px;
-	height: 200px;
+	height: 168px;
+	padding-top: 32px;
 	background: #ffffff;
 	position: absolute;
 	z-index: 10;
@@ -698,26 +694,28 @@ body{
 	text-align: center;
 	display: none;
 }
-.site-table p:first-child{
+.site-table .site-table-title{
 	margin: 32px 0 11px 0;
 	font-size: 18px;
 	line-height: 24px;
 	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
 }
 .site-table p:nth-child(2),
 .site-table p:nth-child(3){
 	font-size: 14px;
 }
-.site-table a{
+.site-table .btn{
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
 	margin-left: -70px;
 }
-.site-table a:hover{
+.site-table .btn:hover{
 	background: #d6494d;
 }
-.site-table a:active{
+.site-table .btn:active{
 	background: #b63538;
 }
 .site-pictures i:first-child{
@@ -728,6 +726,7 @@ body{
 }
 .site-pictures:hover .site-table{
 	display: inline-block;
+	vertical-align: top;
 }
 .catalog-page-number{
 	clear: both;
@@ -737,6 +736,7 @@ body{
 }
 .catalog-page-number a{
 	display: inline-block;
+	vertical-align: top;
 	font-size: 12px;
 	line-height: 18px;
 	text-decoration: none;
@@ -815,6 +815,7 @@ body{
 }
 .login-form label{
 	display: inline-block;
+	vertical-align: top;
 	width: 115px;
 	vertical-align: top;
 	margin-bottom: 8px;
