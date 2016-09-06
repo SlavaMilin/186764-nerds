@@ -612,7 +612,6 @@ body{
 	color: #b2b2b2;
 	text-decoration: none;
 	border-bottom: dotted 1px #00ca74;
-	cursor: default;
 }
 .filter-btn:hover{
 	color: #000000;
@@ -629,7 +628,6 @@ body{
 	width: 11px;
 	height: 10px;
 	background: url("../img/sprite.png") no-repeat;
-	cursor: default;
 }
 .triangle-down{
 	background-position: -273px -10px;
