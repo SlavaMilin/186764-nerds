@@ -87,7 +87,7 @@
                 <i></i><i></i><i></i>
                 <img src="img/aviator.jpg" width="240" height="240" alt="aviator">
                 <div class="site-table">
-                  <p>AVIATOR</p>
+                  <p>aviator</p>
                   <p>Одностраничный макет</p> 
                   <p>с авторским дизайном</p>
                   <a class="btn" href="#">8000 Р.</a>
@@ -97,7 +97,7 @@
               <i></i><i></i><i></i>
                 <img src="img/sunset.jpg" width="240" height="240" alt="sunset">
                 <div class="site-table">
-                  <p>SUNSET</p>
+                  <p>sunset</p>
                   <p>Интернет-магзин</p> 
                   <p>с личным кабинетом</p>
                   <a class="btn" href="#">10000 Р.</a>
@@ -107,7 +107,7 @@
               <i></i><i></i><i></i>
                 <img src="img/forte.jpg" width="240" height="240" alt="forte">
                 <div class="site-table">
-                  <p>FORTE</p>
+                  <p>forte</p>
                   <p>Отличный макет</p> 
                   <p>для личного блога</p>
                   <a class="btn" href="#">5000 Р.</a>                
@@ -117,7 +117,7 @@
               <i></i><i></i><i></i>
                 <img src="img/modern.jpg" width="240" height="240" alt="modern">
                 <div class="site-table">
-                  <p>MODERN ORGANIC THAI</p>
+                  <p>modern organic thai</p>
                   <p>Сайт для ресторана</p> 
                   <p>быстрого питания</p>
                   <a class="btn" href="#">12000 Р.</a>
@@ -127,7 +127,7 @@
               <i></i><i></i><i></i>
                 <img src="img/avenue.jpg" width="240" height="240"  alt="avenue">
                 <div class="site-table">
-                  <p>AVENUE</p>
+                  <p>avenue</p>
                   <p>Макет для блога</p> 
                   <p>о путешествиях</p>
                   <a class="btn" href="#">8000 Р.</a>
@@ -137,7 +137,7 @@
               <i></i><i></i><i></i>
                 <img src="img/dovetail.jpg" width="240" height="240" alt="dovetail">
                 <div class="site-table">
-                  <p>DOVETAIL</p>
+                  <p>dovetail</p>
                   <p>Интернет магазин</p> 
                   <p>с галереей товаров</p>
                   <a class="btn" href="#">14000 Р.</a>
@@ -153,15 +153,17 @@
           </div>
         </div>
         <div class="nerds-map">
-          <section class="contacts container">
-            <p class="nerds-map-title">NЁRDS DESIGN STUDIO</p>
-            <p>
-              191186, Санкт-Петербург, 
-              ул. Б.Конюшенная, д. 19/8             
-            </p>
-            <p>тел. +7(812)275-75-75</p>
-            <button class="btn">Напишите нам</button>
-          </section>       
+          <div class="container">
+            <section class="contacts">
+              <p class="nerds-map-title">nёrds design studio</p>
+              <p>
+                191186, Санкт-Петербург, 
+                ул. Б.Конюшенная, д. 19/8             
+              </p>
+              <p>тел. +7(812)275-75-75</p>
+              <button class="btn write-us">Напишите нам</button>
+            </section>
+          </div>       
         </div>
       </main>
       <footer class="container clearfix">
@@ -175,18 +177,30 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>        
       </section>
     </footer>
-        <div class="catalog-modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <form class="login-form">
-        <label for="your-name">Ваше имя:</label>
-        <label for="your-email">Ваш e-mail:</label>
-        <input class="input-name" type="text" name="your-name" placeholder="представьтесь, пожалуйста">
-        <input class="input-email" type="text" name="your-email" placeholder="для отправки ответа">
-        <label class="label-email" for="text-mail">Текст письма:</label>
-        <input class="input-text-mail" type="text" name="text-mail" placeholder="в свободной форме">
-        <button class="btn" type="submit">Отправить</button>     
-      </form>
-    </div>  
-    
+      <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <form class="login-form">
+          <label for="your-name">Ваше имя:</label>
+          <label for="your-email">Ваш e-mail:</label>
+          <input class="input-name" type="text" name="your-name" placeholder="представьтесь, пожалуйста">
+          <input class="input-email" type="text" name="your-email" placeholder="для отправки ответа">
+          <label class="label-email" for="text-mail">Текст письма:</label>
+          <input class="input-text-mail" type="text" name="text-mail" placeholder="в свободной форме">
+          <button class="btn" type="submit">Отправить</button>     
+        </form>
+      </div>
+      <script>
+        var link = document.querySelector(".write-us");
+        var popup = document.querySelector(".modal-content");
+        var close = document.querySelector(".modal-content-close");
+        link.addEventListener("click", function(event){
+          event.preventDefault();
+          popup.classList.add("modal-content-show");
+        });
+        close.addEventListener("click", function(event){
+          event.preventDefault();
+          popup.classList.remove("modal-content-show");
+        });
+      </script>  
     </body>
   </html>

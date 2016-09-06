@@ -48,9 +48,9 @@
           </div>
           <div class="header-switch-menu">
             <form action="#">
-              <input type="radio" name="switch-menu" class="radio-btn" checked>
-              <input type="radio" name="switch-menu" class="radio-btn">
-              <input type="radio" name="switch-menu" class="radio-btn">
+              <input type="radio" name="switch-menu" class="radio-btn radio1" checked>
+              <input type="radio" name="switch-menu" class="radio-btn radio2">
+              <input type="radio" name="switch-menu" class="radio-btn radio3">
             </form>
           </div>
         </div>
@@ -148,15 +148,17 @@
         </div>
       </div>
       <div class="nerds-map">
-        <section class="contacts">
-          <p>NЁRDS DESIGN STUDIO</p>
-          <p>
-            191186, Санкт-Петербург, 
-            ул. Б.Конюшенная, д. 19/8 
-          </p>           
-           <p>тел. +7(812)275-75-75</p>
-          <button class="btn">Напишите нам</button>
-        </section>
+        <div class="container">
+          <section class="contacts">
+            <p class="nerds-map-title">nёrds design studio</p>
+            <p>
+              191186, Санкт-Петербург, 
+              ул. Б.Конюшенная, д. 19/8             
+            </p>
+            <p>тел. +7(812)275-75-75</p>
+            <button class="btn write-us">Напишите нам</button>
+          </section>
+        </div>       
       </div>  
     </main>
     <footer class="container clearfix">
@@ -181,7 +183,20 @@
         <input class="input-text-mail" type="text" name="text-mail" placeholder="в свободной форме">
         <button class="btn" type="submit">Отправить</button>     
       </form>
-    </div>   
-  </body>
+    </div>
+    <script>
+    var link = document.querySelector(".write-us");
+    var popup = document.querySelector(".modal-content");
+    var close = document.querySelector(".modal-content-close");
+      link.addEventListener("click", function(event){
+      event.preventDefault();
+      popup.classList.add("modal-content-show");
+    });
+      close.addEventListener("click", function(event){
+      event.preventDefault();
+      popup.classList.remove("modal-content-show");
+    });
+    </script>   
+</body>
 </html>
 

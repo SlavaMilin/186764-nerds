@@ -131,13 +131,22 @@ body{
 	position: relative;
 }
 .slider-1{
-	display: nne;
+	display: :none;
+}
+.radio-1:checked{
+	display: block;
 }
 .slider-2{
 	display: none;
 }
+.slider-2:checked{
+	display: block;
+}
 .slider-3{
 	display: none;
+}
+.slider-3:checked{
+	display: block;
 }
 .header-info{
 	width: 470px;
@@ -416,31 +425,27 @@ body{
 	border-bottom: 1px solid #eeeeee;
 }
 .nerds-map{
-	height: 417px;
-	margin-bottom: 75px;
+	height: 329px;
 	width: 100%;
-	background: url("../img/map.jpg") no-repeat;
+	background: #ffffff url("../img/map.jpg") no-repeat;
 	background-position: center;
 	margin-bottom: 75px;
-	clear: both;
+	padding-top: 88px;
 }
 .contacts{
-	width: 250px;
-	height: 240px;
-	margin-top: 89px;
+	width: 203px;
 	background: #ffffff;
+	padding: 26px 27px 26px 20px;
 }
 .contacts p:first-child{
-	display: block;
-	margin-top: 24px;
 	line-height: 30px;
-	margin-left: 20px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
 }
 .contacts p:nth-child(2),
 .contacts p:nth-child(3){
 	color: #666666;
 	line-height: 20px;
-	margin-left: 20px;
 }
 .contacts p:nth-child(2){
 	margin-bottom: 20px;
@@ -450,7 +455,6 @@ body{
 	margin-bottom: 28px;
 }
 .contacts button{
-	margin-left: 23px;
 	width: 204px;
 }
 .contacts button:hover{
@@ -497,11 +501,9 @@ body{
 .btn-fb{
 	background-position: -163px -10px;
 }
-
 .btn-inst{
 	background-position: -198px -10px;
 }
-
 .footer-call{
 	float: right;
 	width: 560px;
@@ -700,6 +702,7 @@ body{
 	margin: 32px 0 11px 0;
 	font-size: 18px;
 	line-height: 24px;
+	text-transform: uppercase;
 }
 .site-table p:nth-child(2),
 .site-table p:nth-child(3){
@@ -770,22 +773,14 @@ body{
 	padding: 50px 90px 50px 80px;
 	background: #ffffff;
 	box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.7);
-	position: absolute;
-	top: 1590px;
-	left: 50%;
-	margin-left: -315px;
-}
-.catalog-modal-content{
-	display: none;
-	width: 460px;
-	padding: 50px 90px 50px 80px;
-	background: #ffffff;
-	box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.7);
 	position: fixed;
 	top: 276px;
 	left: 50%;
 	margin-left: -315px;
-	z-index: 20;
+	z-index: 20
+}
+.modal-content-show{
+	display: block;
 }
 .modal-content-close{
 	width: 41px;
