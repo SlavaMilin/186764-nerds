@@ -58,9 +58,6 @@ body{
 	margin-top: 27px;
 	margin-bottom: 34px;
 }
-.nerds-index-logo a{
-	cursor: default;
-}
 .index-navigation{
 	float: left;
 	margin-top: 55px;
@@ -74,7 +71,6 @@ body{
 	color: #283136;
 	display: block;
 	margin-right: 46px;
-	cursor: default;
 }
 .index-navigation a:hover{
 	border-bottom: 2px solid #fb565a;
@@ -107,9 +103,8 @@ body{
 	text-decoration: none;
 	padding-left: 28px;
 	font-size: 14px;
-	line-height: 30px;
+	line-heigiht: 30px;
 	color: #283136;
-	cursor: default;
 }
 .basket a:hover{
 	border-bottom: solid 2px #fb565a;
@@ -315,9 +310,6 @@ body{
 	clear: both;
 	margin-bottom: 25px; 
 }
-.main-logo a{
-	cursor: default;
-}
 .since-commercial{
 	padding-left: 79px;
 	padding-right: 75px;
@@ -379,7 +371,6 @@ body{
 	margin-bottom: 62px;
 	margin-right: 120px;
 	opacity: 0.2;
-	cursor: default;
 }
 .glukhanko a:hover,
 .glukhanko a:active{
@@ -391,7 +382,6 @@ body{
 	height: 68px;
 	margin-top: 10px;
 	opacity: 0.2;
-	cursor: default;
 }
 .html-academy a:hover,
 .html-academy a:active{
@@ -403,7 +393,6 @@ body{
 	height: 90px;
 	margin-right: 22px;
 	opacity: 0.2;
-	cursor: default;
 }
 .borodinski a:hover,
 .borodinski a:active{
@@ -746,7 +735,6 @@ body{
 	padding: 10px 0px;
 	background: #f1f1f1;
 	border-radius: 5px;
-	cursor: default;
 }
 .catalog-page-number .first-btn{
 	background: transparent;
