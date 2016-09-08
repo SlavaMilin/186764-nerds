@@ -28,30 +28,37 @@
             <a href="#">Корзина</a>            
           </div>
         </div>
-        <div class="second-flor clearfix">
-          <div class="header-info">
-            <h2 class="slider-1">Долго, дорого, скурпулезно.</h2>
-            <h2 class="slider-2">Любите ли вы математику, как любим её мы?</h2>
-            <h2 class="slider-3">Только наркотики, только хардкор!</h2>
-            <p class="slider-1">Математически выверенный дизайн<br>
-            для вашего сайта или мобильного приложения.</p>
-            <p class="slider-2">Нашим дизайнерам мы удаляем нейроны, ответственные<br>
-             за креатив, чтобы дать им возможность все просчитать</p>
-            <p class="slider-3">Все дизайнерские решения в нашей команде принимаются
-            только под воздействием качественных галюциногенов</p>
-            <a class="btn" href="#">Узнать больше</a>
+        <div class="slider">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
           </div>
-          <div class="header-img">
-            <img class="slider-1" src="img/slider-1.png" alt="слайдер1" width="338" height="231">
-            <img class="slider-2" src="img/slider-2.png" alt="слайдер-2" width="230" height="249">
-            <img class="slider-3" src="img/slider-3.png" alt="слайдер-3" width="333" height="319">
-          </div>
-          <div class="header-switch-menu">
-            <form action="#">
-              <input type="radio" name="switch-menu" class="radio-btn" checked id="radio1">
-              <input type="radio" name="switch-menu" class="radio-btn " id="radio2">
-              <input type="radio" name="switch-menu" class="radio-btn" id="radio3">
-            </form>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+                <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+                <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Только наркотики,<br> только хардкор!</div>
+                <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +73,7 @@
               Мир никогда не будет прежним
               после того как увидит ваш сайт!
             </p>
-            <a class="btn btn-1" href="#">Заказать</a>
+            <a class="btn btns-1" href="#">Заказать</a>
           </div>
           <div class="main-product-item">
             <img src="img/app.jpg" alt="Приложения" width="240" height="124">
@@ -75,7 +82,7 @@
               Покорите топ-10 приложений
               в AppStore и Google Play
             </p>
-            <a class="btn btn-2" href="#">Заказать</a>
+            <a class="btn btns-2" href="#">Заказать</a>
           </div>
           <div class="main-product-item">
             <img src="img/presentations.jpg" alt="Презентации" width="240" height="124">
@@ -84,7 +91,7 @@
               Вы даже не подозреваене,
               насколько вы изумительны!
             </p>
-            <a class="btn btn-3" href="#">Заказать</a>
+            <a class="btn btns-3" href="#">Заказать</a>
           </div>
           <div class="line-1">
           </div>
@@ -177,10 +184,10 @@
       <form class="login-form">
         <label for="your-name">Ваше имя:</label>
         <label for="your-email">Ваш e-mail:</label>
-        <input class="input-name" type="text" name="your-name" placeholder="представьтесь, пожалуйста">
-        <input class="input-email" type="text" name="your-email" placeholder="для отправки ответа">
+        <input class="input-name" id="your-name" type="text" name="your-name" placeholder="представьтесь, пожалуйста">
+        <input class="input-email" id="your-email" type="text" name="your-email" placeholder="для отправки ответа">
         <label class="label-email" for="text-mail">Текст письма:</label>
-        <input class="input-text-mail" type="text" name="text-mail" placeholder="в свободной форме">
+        <input class="input-text-mail" id="text-mail" type="text" name="text-mail" placeholder="в свободной форме">
         <button class="btn" type="submit">Отправить</button>     
       </form>
     </div>
