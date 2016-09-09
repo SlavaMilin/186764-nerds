@@ -425,24 +425,27 @@ body{
 	opacity: 1;
 }
 .nerds-map{
-	height: 327px;
+	height: 417px;
 	width: 100%;
 	background: #ffffff url("../img/map.jpg") no-repeat;
 	background-position: center;
 	margin-bottom: 75px;
-	padding-top: 89px;
 }
 .nerds-map iframe{
-	width: 1200;
-	height: 416px;
-	border: 0;
+	width: 100%;
+	height: 417px;
+}
+.nerds-map .container{
+	position: relative;
 }
 .contacts{
 	width: 203px;
 	background: #ffffff;
 	padding: 26px 27px 26px 20px;
-	float: left;
-	}
+	position: absolute;
+	left: 0px;
+	top: 89px;
+}
 .contacts p:first-child{
 	line-height: 30px;
 	text-transform: uppercase;
