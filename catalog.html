@@ -46,27 +46,51 @@
                 <label for="max-cost">ДО</label>
                 <input type="text" name="cost" id="max-cost" value="15000">
               </div>
-              <div class="radio-filter">
+              <div class="radio">
                 <h3>Сетка: </h3>
-                <input type="radio" name="net" id="addaptive" checked="">
-                <label for="addaptive">Адаптивная</label><br>
-                <input type="radio" name="net" id="fiks">
-                <label for="fiks">Фиксированная</label><br>
-                <input type="radio" name="net" id="rubber">
-                <label for="rubber">Резиновая</label><br>         
+                <label class="radio-filter">
+                   <input type="radio" name="net" checked="">
+                   <span class="radio-btn"></span>
+                   Адаптивная
+                </label>
+                <label class="radio-filter">
+                  <input type="radio" name="net">
+                  <span class="radio-btn"></span>
+                  Фиксированная
+                </label>
+                <label class="radio-filter">
+                  <input type="radio" name="net">
+                  <span class="radio-btn"></span>
+                  Резиновая
+                </label>         
               </div>
               <div class="checkbox-filter">
               <h3>Особенности: </h3>
-              <input type="checkbox" id="slider" checked>
-              <label for="slider">Слайдер</label><br>
-              <input type="checkbox" id="block">
-              <label for="block">Блок преимуществ</label><br>
-              <input type="checkbox" id="news" checked>
-              <label for="news">Новости</label><br>
-              <input type="checkbox" id="gallery">
-              <label for="gallery">Галерея</label><br>
-              <input type="checkbox" id="basket">
-              <label for="basket">Корзина</label><br>
+              <label for="slider">
+                <input type="checkbox" id="slider" checked>
+                <span class="checkbox-btn"></span>
+                Слайдер
+              </label>
+              <label for="block">
+                <input type="checkbox" id="block">
+                <span class="checkbox-btn"></span>
+                Блок преимуществ
+              </label>
+              <label for="news">
+                <input type="checkbox" id="news" checked>
+                <span class="checkbox-btn"></span>
+                Новости
+              </label>              
+              <label for="gallery">
+                <input type="checkbox" id="gallery">
+                <span class="checkbox-btn"></span>
+                Галерея
+              </label>              
+              <label for="basket">
+                <input type="checkbox" id="basket">
+                <span class="checkbox-btn"></span>
+                Корзина
+              </label>
               </div>
               <div class="show-btn">
                 <button class="btn" type="submit" >Показать</button>
