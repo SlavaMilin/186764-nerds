@@ -3,9 +3,10 @@
 	<head>
   	<meta charset="utf-8">
   	<title>Nerds-catalog</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">    
+    <link href="css/style.min.css" rel="stylesheet">  
   </head>
     <body>
       <header class="catalog-header clearfix">
@@ -35,36 +36,43 @@
       <main class="catalog-main">
         <div class="container clearfix">
           <div class="catalog-filter">
-            <form action="demo.html">
-              <div class="cost-filter">
-                <h3>Стоимость: </h3>
-                <div class="slider-img">
-                  <img src="img/slider.png" alt="slider">
+            <div class="cost-filter">
+              <h3>Стоимость: </h3>
+              <form action="form.php" method="GET">
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
                 </div>
-                <label for="min-cost">ОТ</label>
-                <input type="text" name="cost" id="min-cost" value="0">
-                <label for="max-cost">ДО</label>
-                <input type="text" name="cost" id="max-cost" value="15000">
-              </div>
-              <div class="radio">
-                <h3>Сетка: </h3>
-                <label class="radio-filter">
-                   <input type="radio" name="net" checked="">
-                   <span class="radio-btn"></span>
-                   Адаптивная
-                </label>
-                <label class="radio-filter">
-                  <input type="radio" name="net">
-                  <span class="radio-btn"></span>
-                  Фиксированная
-                </label>
-                <label class="radio-filter">
-                  <input type="radio" name="net">
-                  <span class="radio-btn"></span>
-                  Резиновая
-                </label>         
-              </div>
-              <div class="checkbox-filter">
+              </form>
+            </div>
+            <div class="radio">
+              <h3>Сетка: </h3>
+              <label class="radio-filter">
+                 <input type="radio" name="net" checked="">
+                 <span class="radio-btn"></span>
+                 Адаптивная
+              </label>
+              <label class="radio-filter">
+                <input type="radio" name="net">
+                <span class="radio-btn"></span>
+                Фиксированная
+              </label>
+              <label class="radio-filter">
+                <input type="radio" name="net">
+                <span class="radio-btn"></span>
+                Резиновая
+              </label>         
+            </div>
+            <div class="checkbox-filter">
               <h3>Особенности: </h3>
               <label for="slider">
                 <input type="checkbox" id="slider" checked>
@@ -91,11 +99,10 @@
                 <span class="checkbox-btn"></span>
                 Корзина
               </label>
-              </div>
-              <div class="show-btn">
-                <button class="btn" type="submit" >Показать</button>
-              </div>
-            </form>      
+            </div>
+            <div class="show-btn">
+              <button class="btn" type="submit" >Показать</button>
+            </div>
           </div>
           <div class="catalog-picture clearfix">
             <div class="picture-filter clearfix">
@@ -185,22 +192,21 @@
                 ул. Б.Конюшенная, д. 19/8             
               </p>
               <p>тел. +7(812)275-75-75</p>
-              <a class="btn write-us">Напишите нам</a>
+              <a href="demo.html" class="btn write-us">Напишите нам</a>
             </section>
           </div>       
         </div>
       </main>
       <footer class="container clearfix">
-      <section class="footer-social-net">
-        <a href="#" class="social-btn"><i class="btn-sprite btn-vk"></i>Вконтакте</a>
-        <a href="#" class="social-btn"><i class="btn-sprite btn-fb"></i>Фейсбук</a>
-        <a href="#" class="social-btn"><i class="btn-sprite btn-inst"></i>Инстаграм</a>
-      </section>
-      <section class="footer-call">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>        
-      </section>
-    </footer>
+        <section class="footer-social-net">        <a href="#" class="social-btn"><i class="btn-sprite btn-vk"></i>Вконтакте</a>
+          <a href="#" class="social-btn"><i class="btn-sprite btn-fb"></i>Фейсбук</a>
+          <a href="#" class="social-btn"><i class="btn-sprite btn-inst"></i>Инстаграм</a>
+        </section>
+        <section class="footer-call">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>        
+        </section>
+      </footer>
       <div class="modal-content">
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <form class="login-form">
@@ -213,18 +219,6 @@
           <button class="btn" type="submit">Отправить</button>     
         </form>
       </div>
-      <script>
-        var link = document.querySelector(".write-us");
-        var popup = document.querySelector(".modal-content");
-        var close = document.querySelector(".modal-content-close");
-        link.addEventListener("click", function(event){
-          event.preventDefault();
-          popup.classList.add("modal-content-show");
-        });
-        close.addEventListener("click", function(event){
-          event.preventDefault();
-          popup.classList.remove("modal-content-show");
-        });
-      </script>  
+      <script src=js/popup.min.js></script>  
     </body>
   </html>

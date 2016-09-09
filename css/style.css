@@ -425,18 +425,24 @@ body{
 	opacity: 1;
 }
 .nerds-map{
-	height: 329px;
+	height: 327px;
 	width: 100%;
 	background: #ffffff url("../img/map.jpg") no-repeat;
 	background-position: center;
 	margin-bottom: 75px;
-	padding-top: 88px;
+	padding-top: 89px;
+}
+.nerds-map iframe{
+	width: 1200;
+	height: 416px;
+	border: 0;
 }
 .contacts{
 	width: 203px;
 	background: #ffffff;
 	padding: 26px 27px 26px 20px;
-}
+	float: left;
+	}
 .contacts p:first-child{
 	line-height: 30px;
 	text-transform: uppercase;
@@ -534,16 +540,87 @@ body{
 	margin-top: 76px;	
 }
 .catalog-filter h3{
-	margin-bottom: 17px;
+	margin-bottom: 10px;
 }
 .cost-filter{
-	margin-bottom: 48px;
+	margin-bottom: 46px;
 }
-.slider-img{
-	background: #f1f1f1;
-	border-radius: 5px;
-	margin-bottom: 14px;
+.range-filter {
+  width: 240px;
 }
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+  margin-left: 20%;
+  width: 30%;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #f1f1f1;
+}
+
 .cost-filter img{
 	padding: 28.5px 20px;
 }
@@ -603,7 +680,7 @@ body{
 	background: #b5b5b5;
 }
 .checkbox-filter{
-	margin-bottom: 57px; 
+	margin-bottom: 42px; 
 }
 .checkbox-filter:hover{
 	color: #444444;
@@ -947,4 +1024,13 @@ body{
   font-size: 12px;
   line-height: 18px;
 }
-
+@keyframes bounce{
+	0% { transform: translateY(-2800px); }
+	70% { transform: translateY(30px); }
+	90% { transform: translateY(-10px); }
+	100% { transform: translateY(0px); }
+}
+.modal-content-show{
+	display: block;
+	animation: bounce 0.6s;
+}
